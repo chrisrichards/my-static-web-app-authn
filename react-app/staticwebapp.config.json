@@ -2,10 +2,14 @@
   "routes": [
     {
       "route": "/api/products/*",
-      "allowedRoles": ["authenticated"]
+      "allowedRoles": ["chris"]
     },    
     {
       "route": "/.auth/login/aad",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/login/twitter",
       "statusCode": 404
     }
   ],  
